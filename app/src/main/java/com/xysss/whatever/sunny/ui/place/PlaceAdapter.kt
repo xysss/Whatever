@@ -1,15 +1,14 @@
-package com.xysss.whatever.ui.place
+package com.xysss.whatever.sunny.ui.place
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.xysss.whatever.R
-import com.xysss.whatever.logic.model.Place
-import com.xysss.whatever.ui.weather.WeatherActivity
+import com.xysss.whatever.sunny.logic.model.Place
+import com.xysss.whatever.sunny.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.activity_weather.*
 
 

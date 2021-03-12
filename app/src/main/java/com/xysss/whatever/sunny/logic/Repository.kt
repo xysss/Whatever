@@ -1,11 +1,10 @@
-package com.xysss.whatever.logic
+package com.xysss.whatever.sunny.logic
 
 import androidx.lifecycle.liveData
-import com.xysss.whatever.logic.dao.PlaceDao
-import com.xysss.whatever.logic.model.Place
-import com.xysss.whatever.logic.model.PlaceResponse
-import com.xysss.whatever.logic.model.Weather
-import com.xysss.whatever.logic.network.SunnyWeatherNetwork
+import com.xysss.whatever.sunny.logic.dao.PlaceDao
+import com.xysss.whatever.sunny.logic.model.Place
+import com.xysss.whatever.sunny.logic.model.Weather
+import com.xysss.whatever.sunny.logic.network.SunnyWeatherNetwork
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope

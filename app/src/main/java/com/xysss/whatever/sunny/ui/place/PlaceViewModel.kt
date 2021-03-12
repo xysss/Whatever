@@ -1,8 +1,8 @@
-package com.xysss.whatever.ui.place
+package com.xysss.whatever.sunny.ui.place
 
 import androidx.lifecycle.*
-import com.xysss.whatever.logic.Repository
-import com.xysss.whatever.logic.model.Place
+import com.xysss.whatever.sunny.logic.Repository
+import com.xysss.whatever.sunny.logic.model.Place
 
 class PlaceViewModel : ViewModel() {
 

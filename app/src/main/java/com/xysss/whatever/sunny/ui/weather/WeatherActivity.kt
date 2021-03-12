@@ -1,4 +1,4 @@
-package com.xysss.whatever.ui.weather
+package com.xysss.whatever.sunny.ui.weather
 
 import android.content.Context
 import android.graphics.Color
@@ -16,8 +16,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.xysss.whatever.R
-import com.xysss.whatever.logic.model.Weather
-import com.xysss.whatever.logic.model.getSky
+import com.xysss.whatever.sunny.logic.model.Weather
+import com.xysss.whatever.sunny.logic.model.getSky
 import kotlinx.android.synthetic.main.activity_weather.*
 import kotlinx.android.synthetic.main.forecast.*
 import kotlinx.android.synthetic.main.life_index.*

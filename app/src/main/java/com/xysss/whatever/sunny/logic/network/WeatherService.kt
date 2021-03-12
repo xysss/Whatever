@@ -1,8 +1,8 @@
-package com.xysss.whatever.logic.network
+package com.xysss.whatever.sunny.logic.network
 
-import com.xysss.whatever.SunnyWeatherApplication
-import com.xysss.whatever.logic.model.DailyResponse
-import com.xysss.whatever.logic.model.RealtimeResponse
+import com.xysss.whatever.sunny.SunnyWeatherApplication
+import com.xysss.whatever.sunny.logic.model.DailyResponse
+import com.xysss.whatever.sunny.logic.model.RealtimeResponse
 
 import retrofit2.Call
 import retrofit2.http.GET

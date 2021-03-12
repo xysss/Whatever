@@ -1,8 +1,8 @@
-package com.xysss.whatever.ui.weather
+package com.xysss.whatever.sunny.ui.weather
 
 import androidx.lifecycle.*
-import com.xysss.whatever.logic.Repository
-import com.xysss.whatever.logic.model.Location
+import com.xysss.whatever.sunny.logic.Repository
+import com.xysss.whatever.sunny.logic.model.Location
 
 
 class WeatherViewModel : ViewModel() {

@@ -1,4 +1,4 @@
-package com.xysss.whatever.logic.model
+package com.xysss.whatever.sunny.logic.model
 
 import com.google.gson.annotations.SerializedName
 

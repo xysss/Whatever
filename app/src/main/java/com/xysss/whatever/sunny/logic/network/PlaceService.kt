@@ -1,7 +1,7 @@
-package com.xysss.whatever.logic.network
+package com.xysss.whatever.sunny.logic.network
 
-import com.xysss.whatever.logic.model.PlaceResponse
-import com.xysss.whatever.SunnyWeatherApplication
+import com.xysss.whatever.sunny.logic.model.PlaceResponse
+import com.xysss.whatever.sunny.SunnyWeatherApplication
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
