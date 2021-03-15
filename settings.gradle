@@ -1,2 +1,7 @@
 include ':app'
+include ':core'
+include ':floating'
+include ':permisson'
+include ':model'
+include ':network'
 rootProject.name = "Whatever"

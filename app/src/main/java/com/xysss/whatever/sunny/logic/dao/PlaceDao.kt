@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.core.content.edit
 import com.google.gson.Gson
 import com.xysss.whatever.sunny.logic.model.Place
-import com.xysss.whatever.sunny.SunnyWeatherApplication
+import com.xysss.whatever.App
 
 
 object PlaceDao {
@@ -23,6 +23,6 @@ object PlaceDao {
     fun isPlaceSaved() = sharedPreferences().contains("place")
 
     private fun sharedPreferences() =
-        SunnyWeatherApplication.context.getSharedPreferences("sunny_weather", Context.MODE_PRIVATE)
+        App.context.getSharedPreferences("sunny_weather", Context.MODE_PRIVATE)
 
 }

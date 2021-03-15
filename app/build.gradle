@@ -89,11 +89,11 @@ dependencies {
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     implementation 'com.youth.banner:banner:2.1.0'
 
-    /*implementation project(path: ':model')
-    implementation project(path: ':floating')
+    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.67_43967_sharewithdownloadwithfile_withoutGame_obfs_20200923_120452.jar')
     implementation project(path: ':core')
+    implementation project(path: ':model')
+    implementation project(path: ':floating')
     implementation project(path: ':network')
-    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.67_43967_sharewithdownloadwithfile_withoutGame_obfs_20200923_120452.jar')*/
 
     // 内存泄漏检测
     //implementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
