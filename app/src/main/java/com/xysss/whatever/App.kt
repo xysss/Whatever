@@ -11,7 +11,7 @@ import com.scwang.smart.refresh.layout.SmartRefreshLayout
 
 import com.tencent.bugly.crashreport.CrashReport
 import com.tencent.smtt.sdk.QbSdk
-import com.zj.core.Play
+import com.xysss.core.Play
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.*
 import java.util.*
@@ -31,7 +31,6 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        context = applicationContext
         instances = this
         Play.initialize(applicationContext)
         initData()
@@ -46,7 +45,7 @@ class App : Application() {
 
     private fun initBugLy() {
         // Bugly bug上报
-        CrashReport.initCrashReport(applicationContext, "be9a7ea544", false)  //改为自己注册的App ID
+        CrashReport.initCrashReport(applicationContext, "be9a7ea544", false)  //App Id
     }
 
     private fun initQbSdk() {
@@ -75,12 +74,8 @@ class App : Application() {
             exitProcess(0)
         }
     }
-    //companion 静态  object 单例
-    companion object {
-        const val TOKEN = "BhF86VEauO56lSCo" // 填入你申请到的令牌值 xys
-        @SuppressLint("StaticFieldLeak")  //标注忽略指定的警告
-        lateinit var context: Context  //lateinit 延迟加载
 
+    companion object {
         @SuppressLint("StaticFieldLeak")
         private var instances: App? = null
 

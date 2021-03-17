@@ -58,45 +58,33 @@ android {
 
 dependencies {
 
-    implementation 'com.google.android.material:material:1.2.1'  //material UI库
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-alpha06"
-    implementation "androidx.work:work-runtime:2.4.0"
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
-    // hilt
-    implementation 'com.google.dagger:hilt-android:2.33-beta'
-    kapt 'com.google.dagger:hilt-android-compiler:2.32-alpha'
-    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02'
-    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha02'
-    // 异常上报
-    implementation 'com.tencent.bugly:crashreport:3.3.1'
-
-    implementation fileTree(include: ['*.jar'], dir: 'libs')  //导入本地包
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation des.kotlinVersion
     implementation des.coreKtx
     implementation des.appcompat
-    testImplementation des.junit
-    androidTestImplementation des.extJunit
-    androidTestImplementation des.espressoCore
-
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     implementation 'com.youth.banner:banner:2.1.0'
 
-    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.67_43967_sharewithdownloadwithfile_withoutGame_obfs_20200923_120452.jar')
-    implementation project(path: ':core')
-    implementation project(path: ':model')
-    implementation project(path: ':floating')
-    implementation project(path: ':network')
 
     // 内存泄漏检测
     //implementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
 
+    // hilt
+    implementation 'com.google.dagger:hilt-android:2.32-alpha'
+    kapt 'com.google.dagger:hilt-android-compiler:2.32-alpha'
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha02'
 
+    // 异常上报
+    implementation 'com.tencent.bugly:crashreport:3.3.1'
+    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.67_43967_sharewithdownloadwithfile_withoutGame_obfs_20200923_120452.jar')
+    testImplementation des.junit
+    androidTestImplementation des.extJunit
+    androidTestImplementation des.espressoCore
+    implementation project(path: ':core')
+    implementation project(path: ':floating')
+     implementation project(path: ':network')
+     implementation project(path: ':model')
+     implementation project(path: ':permission')
 }
