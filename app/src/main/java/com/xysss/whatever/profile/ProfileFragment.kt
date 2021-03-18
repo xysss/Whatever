@@ -48,7 +48,7 @@ class ProfileFragment : BaseFragment(), View.OnClickListener {
         container: ViewGroup?,
         attachToRoot: Boolean
     ): View {
-        binding = FragmentProfileBinding.inflate(inflater, container, false)
+        binding = FragmentProfileBinding.inflate(inflater, container, false)  //ViewBinding 标准写法
         return binding!!.root
     }
 
@@ -140,4 +140,8 @@ class ProfileFragment : BaseFragment(), View.OnClickListener {
         fun newInstance() = ProfileFragment()
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding=null
+    }
 }

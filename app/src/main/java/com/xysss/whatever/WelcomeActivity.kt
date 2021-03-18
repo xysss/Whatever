@@ -13,15 +13,14 @@ import com.xysss.whatever.main.MainActivity
  * Author:bysd-2
  * Time:2021/3/1711:12
  */
-class WelcomeActivity : BaseActivity(),
-    View.OnClickListener {
+class WelcomeActivity : BaseActivity(), View.OnClickListener {
 
-    private lateinit var binding: ActivityWelcomeBinding
+    private lateinit var binding: ActivityWelcomeBinding  //延时初始化
     private var exitTime: Long = 0
     private var animationTime: Long = 500
 
     override fun getLayoutView(): View {
-        binding = ActivityWelcomeBinding.inflate(layoutInflater)
+        binding = ActivityWelcomeBinding.inflate(layoutInflater)  //ViewBinding 标准写法
         return binding.root
     }
 

@@ -53,7 +53,7 @@ abstract class BaseActivity : AppCompatActivity(), ILce, BaseActivityInit {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        BarUtils.transparentStatusBar(this)
+        BarUtils.transparentStatusBar(this)  //设置沉浸式状态栏（透明状态栏）
         setContentView(getLayoutView())
         ActivityCollector.add(WeakReference(this))
         weakRefActivity = WeakReference(this)

@@ -84,7 +84,9 @@ dependencies {
     androidTestImplementation des.espressoCore
     implementation project(path: ':core')
     implementation project(path: ':floating')
-     implementation project(path: ':network')
-     implementation project(path: ':model')
-     implementation project(path: ':permission')
+    implementation project(path: ':network')
+    implementation project(path: ':model')
+    implementation project(path: ':permission')
+    debugImplementation 'com.glance.guolindev:glance:1.0.0-alpha01' //调试Android数据库 郭霖
+
 }
